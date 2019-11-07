@@ -1,0 +1,14 @@
+---
+layout: base.html 
+---
+<style>
+main ul {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+}
+</style>
+
+<main>
+{{ content | safe }}
+</main>
