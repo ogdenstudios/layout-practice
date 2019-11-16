@@ -1,0 +1,24 @@
+---
+layout: base.html 
+---
+<style>
+main ul {
+  display: grid;
+  grid-template-columns: 1fr 2.618fr 4.21fr 1fr;
+  grid-template-rows: 1fr 2.618fr 4.21fr 1fr;
+  grid-gap: 1rem;
+  padding-left: 0;
+}
+
+main li {
+    background: #c4ffef;
+    box-sizing: border-box;
+    color: black;
+    list-style: none;
+    padding: 2em;
+}
+</style>
+
+<main>
+{{ content | safe }}
+</main>
