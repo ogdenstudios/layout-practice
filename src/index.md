@@ -12,6 +12,7 @@ An Eleventy Site to practice layout in CSS.
 Exercises and studies from [Jen Simmons' labs](https://labs.jensimmons.com/).
 
 [Exercise One](/exercise-one)
+[Exercise Two](/exercise-two)
 
 ## Assorted Studies
 
