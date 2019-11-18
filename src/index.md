@@ -13,6 +13,7 @@ Exercises and studies from [Jen Simmons' labs](https://labs.jensimmons.com/).
 
 [Exercise One](/exercise-one)
 [Exercise Two](/exercise-two)
+[Exercise Three](/exercise-three)
 
 ## Assorted Studies
 
