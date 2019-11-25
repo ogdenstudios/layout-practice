@@ -1,0 +1,47 @@
+---
+layout: base.html 
+---
+<style>
+main ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-gap: 1rem;
+}
+
+main ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+  font-family: Avenir, Heveltica, Arial, san-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+main li {
+  padding: 1em;
+  background: #F9423A;
+}
+
+main li:nth-child(3),
+main li:nth-child(7),
+main li:nth-child(9) {
+  background: #FF9124;
+}
+
+main li:nth-child(3) {
+    grid-column: span 2;
+}
+
+main li:nth-child(7) {
+    grid-row: span 2;
+}
+
+main li:nth-child(9) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+</style>
+
+<main>
+{{ content | safe }}
+</main>
