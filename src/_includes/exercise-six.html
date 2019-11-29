@@ -1,0 +1,60 @@
+---
+layout: base.html 
+---
+<style>
+main ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
+}
+main li:nth-child(4),
+main li:nth-child(5),
+main li:nth-child(10){
+  grid-column: span 3;
+}
+main li:nth-child(7),
+main li:nth-child(8) {
+  grid-row: span 5;
+}
+main li:nth-child(1),
+main li:nth-child(6),
+main li:nth-child(9) {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+body {
+  background: #F6F3EA
+}
+main ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+  font-family: Avenir, Heveltica, Arial, san-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+main li {
+  padding: 1em;
+  background: #F9423A;
+}
+</style>
+
+<main>
+{{ content | safe }}
+</main>
+
+<script>
+function toggleAutoFlow(event) {
+    var demo = document.querySelector("main ul");
+    console.log(demo.style.gridAutoFlow);
+    if (demo.style.gridAutoFlow === "dense") {
+        event.target.innerText = "Change to dense";
+        demo.style.gridAutoFlow = "";
+    } else {
+        demo.style.gridAutoFlow = "dense";
+        event.target.innerText = "Change to sparse";
+    }
+}
+</script>
