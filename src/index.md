@@ -17,6 +17,7 @@ Exercises and studies from [Jen Simmons' labs](https://labs.jensimmons.com/).
 * [Exercise Four](/exercise-four)
 * [Exercise Five](/exercise-five)
 * [Exercise Six](/exercise-six)
+* [Exercise Seven](/exercise-seven)
 
 ## Assorted Studies
 

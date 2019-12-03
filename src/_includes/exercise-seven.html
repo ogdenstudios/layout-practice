@@ -1,0 +1,60 @@
+---
+layout: base.html 
+---
+<style>
+
+main ul {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2.618fr 4.21fr 4fr;
+}
+
+main li:nth-child(odd) {
+    grid-column: span 3;
+}
+
+main li:nth-child(even) {
+    grid-row: span 2;
+}
+
+main li:nth-child(3),
+main li:nth-child(9) {
+    grid-column: span 2;
+}
+
+body {
+  background: #F6F3EA
+}
+main ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+  font-family: Avenir, Heveltica, Arial, san-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+main li {
+  padding: 1em;
+  background: #F9423A;
+}
+main li:nth-child(2),
+main li:nth-child(6){
+  background: #444;
+}
+main li:nth-child(8),
+main li:nth-child(10){
+  background: #4794B8;
+}
+main li:nth-child(3),
+main li:nth-child(7),
+main li:nth-child(9) {
+  background: #FF9124;
+}
+</style>
+
+<main>
+{{ content | safe }}
+</main>
