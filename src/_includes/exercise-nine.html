@@ -1,0 +1,44 @@
+---
+layout: base.html 
+---
+<style>
+main ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1em;
+}
+
+main li:nth-child(1) {
+  grid-column: 2;
+}
+main li:nth-child(2) {
+  grid-column: 4;
+}
+main li:nth-child(3) {
+  grid-column: 1;
+}
+main li:nth-child(4) {
+  grid-column: 3;
+}
+main li:nth-child(5) {
+  grid-column: 5;
+}
+
+* {box-sizing:border-box;}
+body {
+ background: #f6f3ea;
+}
+main img {
+  display: block;
+  width: 100%;
+}
+main ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.2rem;
+}
+</style>
+
+<main>
+{{ content | safe }}
+</main>
